@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EDBProjectNineMVC.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            @Html.DisplayNameFor(model => model.Category.CategoryType)
+        </div>
+        <div class="col">
+            @Html.DisplayNameFor(model => model.Title)
+        </div>
+        <div class="col">
+            @Html.DisplayNameFor(model => model.Content)
+        </div>
+        <div class="col">
+            @Html.DisplayNameFor(model => model.ReviewDate)
+        </div>
+        <div></div>
+    </div>
+
+@foreach (var item in Model) {
+    <div class="row">
+        <div class="col">
+            @Html.DisplayFor(modelItem => item.Category.CategoryType)
+        </div>
+        <div class="col">
+            @Html.DisplayFor(modelItem => item.Title)
+        </div>
+        <div class="col">
+            @Html.DisplayFor(modelItem => item.Content)
+        </div>
+        <div class="col">
+            @Html.DisplayFor(modelItem => item.ReviewDate)
+        </div>
+        <div class="col">
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
+        </div>
+    </div>
+}
+
+</div>

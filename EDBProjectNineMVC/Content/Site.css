@@ -22,3 +22,100 @@ select,
 textarea {
     max-width: 280px;
 }
+/*This code affects the body of the sharedlayout*/
+
+/*This code affects the list items in the Navbar*/
+#sharedbody li{ 
+    display:inline-flex;
+    margin: 10px;
+    
+}
+/*Changes the background of the Navbar*/
+.navbar{
+    background-color:brown !important;
+}
+
+
+p {
+    color: forestgreen;
+}
+/*Text Scroll  START*/
+/* Set the font, lean the board, position it */
+#board {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+    text-align: justify;
+    position: relative;
+    margin-left: -9em;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 250%;
+    height: 30em;
+    width: 18em;
+    bottom: 0;
+    left: 50%;
+    max-height: 300px;
+}
+
+    #board:after {
+        position: relative;
+        content: ' ';
+        bottom: 60%;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+/* Set the scrolling animation and position it */
+#content {
+    animation: scroll 40s linear infinite;
+    position: relative ;
+    top: 100%;
+}
+
+#title, #subtitle {
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -170%;
+    }
+}
+/*Text Scroll Code END*/
+/*This code affects the body of the sharedlayout*/
+#sharedbody {
+    margin: 0;
+    background-color: black;
+    font-family: Proxima Nova,Proxima-Nova,proxima-nova,Helvetica,Arial,sans-serif;
+}
+/*CSS Code for Details Partial View*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.container {
+    padding: 2px 16px;
+}
+/*CSS Code for Details Partial View END*/
+
+.primary {
+    -webkit-flex-grow: 2;
+    flex-grow: 2;
+    padding-left: 5px;
+}
+
+div {
+    display: block;
+}

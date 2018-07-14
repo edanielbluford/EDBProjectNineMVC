@@ -1,0 +1,68 @@
+﻿@model EDBProjectNineMVC.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h2>Review</h2>
+
+    <div class="card"> @* Card View for Details partial view. *@
+        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b>@Html.DisplayNameFor(model => model.Category.CategoryType)</b></h4>
+            <p><b>@Html.DisplayFor(model => model.Category.CategoryType)</b></p>
+            <h4><b>@Html.DisplayNameFor(model => model.Title)</b></h4>
+            <p><b>@Html.DisplayFor(model => model.Title)</b></p>
+            <h4><b>@Html.DisplayNameFor(model => model.Content)</b></h4>
+            <p><b>@Html.DisplayFor(model => model.Content)</b></p>
+            <p><b>@Html.DisplayNameFor(model => model.ReviewDate)</b></p>
+            <p><b>@Html.DisplayFor(model => model.ReviewDate)</b></p>
+
+            @*<p>Architect & Engineer</p>*@
+        </div>
+    </div>
+
+    @*<h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CategoryType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewDate)
+        </dd>
+
+    </dl>*@
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
