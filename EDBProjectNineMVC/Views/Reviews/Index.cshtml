@@ -26,10 +26,11 @@
         </div>
         <div></div>
     </div>
-
-    @foreach (var item in Model)
+    @* Table Loop *@
+    @foreach (var item in Model)      
     {
         <div class="row" id="reviewdisplay">
+
             <div class="col">
                 @Html.DisplayFor(modelItem => item.Category.CategoryType)
             </div>
