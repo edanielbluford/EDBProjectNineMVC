@@ -37,7 +37,8 @@ textarea {
 
 
 p {
-    color: forestgreen;
+    color: cornflowerblue;
+    text-shadow:1px black;
 }
 /*Text Scroll  START*/
 /* Set the font, lean the board, position it */
@@ -91,7 +92,7 @@ p {
 /*This code affects the body of the sharedlayout*/
 #sharedbody {
     margin: 0;
-    background-color: black;
+    background-color: beige;
     font-family: Proxima Nova,Proxima-Nova,proxima-nova,Helvetica,Arial,sans-serif;
 }
 /*CSS Code for Details Partial View*/
@@ -119,3 +120,58 @@ p {
 div {
     display: block;
 }
+
+
+
+#tableheader {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    margin-right:10px
+
+}
+#indexHeader{
+    display:inline-flex;
+    justify-content:center
+}
+/*Review Index Page display (ForLoop)*/
+#reviewdisplay {
+    border: groove;
+    background-color: maroon;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+    #reviewdisplay:hover {
+        background-color: yellow;
+        box-shadow: 10px 10px 5px grey;
+        border-radius:60%;
+        color: black;
+    }
+/*Details Page Buttons*/
+.btn {
+    background-color: floralwhite;
+    border: none;
+    color: white;
+    padding: 5px 8px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:60% !important;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*Home Page Code*/
+
+.descriptiontag{
+    background-color:darkslateblue;
+}
+
+#video{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
